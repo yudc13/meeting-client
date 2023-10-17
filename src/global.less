@@ -9,6 +9,8 @@ body,
     'Noto Color Emoji';
 }
 
+@primaryColor: #FFB6C4;
+
 .colorWeak {
   filter: invert(80%);
 }
@@ -44,6 +46,18 @@ ol {
   }
   .ant-menu-item:not(.ant-menu-item-selected):active {
     color: #FFF !important;
+  }
+}
+
+a.ant-typography {
+  color: @primaryColor !important;
+  &:hover {
+    color: lighten(@primaryColor, 90%) !important;
+  }
+}
+.ant-pro-query-filter-collapse-button {
+  &:hover {
+    color: lighten(@primaryColor, 90%) !important;
   }
 }
 

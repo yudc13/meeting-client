@@ -1,0 +1,1 @@
+export { useProTableRequest } from './useProTableRequest';

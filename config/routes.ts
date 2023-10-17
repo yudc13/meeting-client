@@ -12,12 +12,12 @@
  */
 export default [
   {
-    path: '/user',
+    path: '/auth',
     layout: false,
     routes: [
       {
         name: 'login',
-        path: '/user/login',
+        path: '/auth/login',
         component: './User/Login',
       },
     ],
@@ -39,6 +39,12 @@ export default [
     name: '日程',
     icon: 'calendar',
     component: './Welcome',
+  },
+  {
+    path: '/user',
+    name: '用户',
+    icon: 'user',
+    component: './User',
   },
   {
     path: '/message',

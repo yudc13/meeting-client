@@ -27,11 +27,10 @@ export default {
    * @doc https://github.com/chimurai/http-proxy-middleware
    */
   test: {
-    // localhost:8000/api/** -> https://preview.pro.ant.design/api/**
     '/api/': {
-      target: 'https://proapi.azurewebsites.net',
+      target: 'http://localhost:3000',
       changeOrigin: true,
-      pathRewrite: { '^': '' },
+      pathRewrite: { '^/api': '' },
     },
   },
   pre: {
